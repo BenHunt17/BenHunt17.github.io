@@ -1,11 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ben Hunt</title>
-  </head>
-  <body>
-    Test
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Hunt</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-zinc-900">
+  <div class="max-w-6xl mx-auto p-4">
+    <header class="flex justify-end items-center  gap-6 md:gap-12 sticky top-0 bg-zinc-900 h-24 z-1">
+      <a href="#about-me" class="text-white font-bold text-xs md:text-lg hover:text-gray-200">About me</a>
+      <a href="#latest-work" class="text-white font-bold text-xs md:text-lg hover:text-gray-200">Latest work</a>
+      <a href="#my-progression" class="text-white font-bold text-xs md:text-lg hover:text-gray-200">My progression</a>
+      <a href="#next-steps" class="text-white font-bold text-xs md:text-lg hover:text-gray-200">Next steps</a>
+      <a href="#contact-me" class="text-white font-bold text-xs md:text-lg hover:text-gray-200">Contact me</a>
+    </header>
+    <h1 class="text-4xl md:text-6xl text-white font-bold whitespace-nowrap tracking-tighter"> <span
+        class="text-emerald-500">Benjamin</span> Hunt</h1>
+    <div class="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-12 mt-10">
+      <div class="border-l-6 border-emerald-500 px-4">
+        <h2 id="about-me" class="text-4xl text-white font-bold whitespace-nowrap tracking-tighter scroll-mt-24">
+          About me
+        </h2>
+      </div>
+      <div>
+        <p class="text-white">
+          Hi, I’m Benjamin (I prefer Ben), a software developer. I currently
+          contribute to the development and maintenance of an in-house enterprise platform. On the backend, I work with
+          ASP.NET Core with MongoDB and on the frontend, I use React with TypeScript. The platform spans many
+          domains and has a range of architectural patterns and infrastructure tooling, including:
+        </p>
+        <ul>
+          <li class="text-white list-disc ml-8">Microservices architecture deployed via kubernetes.</li>
+          <li class="text-white list-disc ml-8">CI/CD pipelines with Azure DevOps.</li>
+          <li class="text-white list-disc ml-8">GraphQL (Using NestJS) for frontend data aggregation.</li>
+          <li class="text-white list-disc ml-8">Orchestration-based saga pattern for cross service workflows.</li>
+          <li class="text-white list-disc ml-8">Asynchronous communication through message queues.</li>
+          <li class="text-white list-disc ml-8">A dedicated service for syncing data between a legacy system and the new
+            platform.</li>
+        </ul>
+        <br />
+        <p class="text-white">Working on this platform has given me hands-on experience with designing scalable services
+          and working with distributed systems. I continue to learn new things every day and improve my expertise in
+          software development.</p>
+        <br />
+        <p class="text-white">
+          The reason I became a software developer was because I wanted to
+          understand how things work. With so many tools and concepts out there,
+          I find myself always curious to learn and grow in a variety of skills.
+          That said, I've gravitated towards C# and the .NET ecosystem because
+          they align naturally with my intuition.
+        </p>
+      </div>
+      <div class="border-l-6 border-emerald-500 px-4">
+        <h2 id="latest-work" class="text-4xl text-white font-bold whitespace-nowrap tracking-tighter scroll-mt-24">
+          Latest work
+        </h2>
+      </div>
+      <div>
+        <p class="text-white">
+          Aside from my job, I am currently building a prototype for a client tracking application for personal trainers
+          to use.
+          This is a full stack project where I am utilizing ASP.NET Core Web API and SQL Server on the backend and React
+          with Typescript and TailwindCSS on the frontend. It is currently a work in progress with core feature still
+          being developed.
+        </p><br />
+        <p class="text-white mt-">
+          I initially began this project as an opportunity to get hands-on with Entity Framework Core to broaden my
+          database expertise beyond NoSQL. At the same time, I saw personal trainers online who were using spreadsheets
+          to track
+          their clients' progress. This got me thinking about if and how software could streamline this admin work,
+          allowing PTs to spend more time with their clients.
+        </p>
+        <br />
+        <p class="text-white mt-">
+          One key thing I've learned is that developers need to be thoughtful when using Entity Framework Core, while
+          its tooling is convenient, it's important to understand how the framework works in order to avoid performance
+          and design
+          issues.
+        </p>
+        <br />
+        <p class="text-white mt-">
+          Links to the repos are below. I plan to deploy a demo in the near future when the project is more fleshed out.
+        </p>
+        <div class="flex flex-col md:flex-row flex-wrap gap-2 mt-8">
+          <a class="w-fit bg-emerald-500 py-1 px-2 rounded-md opacity-50 mr-2 cursor-default">Demo (Coming
+            soon)</a>
+          <a href="https://github.com/BenHunt17/pt-program-tracker-api"
+            class="w-fit border-2 border-emerald-500 py-1 px-2 rounded-md text-emerald-500 mr-2">Backend repo</a>
+          <a href="https://github.com/BenHunt17/pt-program-tracker"
+            class="w-fit border-2 border-emerald-500 py-1 px-2 rounded-md text-emerald-500">Frontend repo</a>
+        </div>
+      </div>
+      <div class="border-l-6 border-emerald-500 px-4">
+        <h2 id="my-progression" class="text-4xl text-white font-bold whitespace-nowrap tracking-tighter scroll-mt-24">
+          My progression
+        </h2>
+      </div>
+      <div>
+        <p class="text-white">
+          Like many people, my interest in programming started because I wanted to make games. I found it
+          fascinating that seemingly arbitrary code on a computer could somehow make it run a full interactive
+          experience. This motivated me to study Computer Science at GCSE and from there I went to University and
+          eventually become a professional programmer.
+        </p>
+        <br />
+        <h3 class="text-2xl text-white font-bold">University</h3>
+        <p class="text-white">
+          When I first started studying Computer Science at university, I had already been
+          programming for a few years. However I had not yet grasped advanced concepts or developed anything
+          noteworthy. That changed in my second year when I played a key role in managing a group software development
+          project.
+        </p>
+        <ul>
+          <li class="text-white list-disc ml-8">I gained experience with all steps of the software development cycle,
+            from requirements analysis through to implementation.</li>
+          <li class="text-white list-disc ml-8">I had the opportunity to design the relational database model and
+            bring it to life in a database.</li>
+          <li class="text-white list-disc ml-8">I learned about the MVC pattern and implemented features for
+            an existing system.</li>
+        </ul>
+        <br />
+        <p class="text-white">In my final year, I had the opportunity to specialise in Artificial Intelligence. For my
+          dissertation I compared a deep learning model and a traditional machine learning method for detecting people
+          in video footage. This was during the peak of the pandemic, which had sparked my interest in automating indoor
+          traffic control.
+        </p>
+        <ul>
+          <li class="text-white list-disc ml-8">I split datasets and trained models on them.</li>
+          <li class="text-white list-disc ml-8">I utilised python to apply these models to video footage.</li>
+          <li class="text-white list-disc ml-8">I got familiar with all of the moving parts and inner workings of a
+            convolutional neural network.</li>
+        </ul>
+        <br />
+        <h3 class="text-2xl text-white font-bold">Frontend software developer</h3>
+        <p class="text-white">
+          After graduating from university, I began working as a frontend software developer I was
+          placed on a
+          recently started project for building a replacement enterprise platform for a complex business domain.
+        </p>
+        <ul>
+          <li class="text-white list-disc ml-8">By learning on the job I quickly picked up React, Typescript and
+            GraphQL.
+          </li>
+          <li class="text-white list-disc ml-8">I began to take ownership for developing features that delivered real
+            value.</li>
+          <li class="text-white list-disc ml-8">Through regular scrum meetings and close collaboration, I came to
+            understand that being a software developer is more than just writing code - it's about delivering meaningful
+            outcomes for the business and its users.</li>
+        </ul>
+        <br />
+        <h3 class="text-2xl text-white font-bold">Transition to full stack</h3>
+        <p class="text-white">
+          Soon after starting my new job, I was exposed to C#, which I found appealing due to its clean syntax and
+          structured concepts. I began honing my skills by developing a strategy game using Unity. However as I
+          become more comfortable with frontend development, I found myself wanting to understand the backend better. I
+          began teaching myself about server-side roles in software and quickly became eager to get hands-on experience
+          with ASP.NET Core, which was used at work.
+        </p>
+        <br />
+        <p class="text-white">I decided to teach myself through developing a personal project. The project I came up
+          with
+          was an ambitious food recipe management system - A full-stack
+          web appplication with a React UI and an ASP.Net Core Web API.
+        </p>
+        <ul>
+          <li class="text-white list-disc ml-8">For the database I chose SQL Server and wrote
+            stored procedures for every CRUD operation, which I accessed using Dapper.
+          </li>
+          <li class="text-white list-disc ml-8">Because I was keen to understand every
+            detail and moving part, I did make some choices that I now view differently. For example, I
+            implemented my own authentication endpoints (To my credit, I did properly salt and hash the passwords!) I
+            now know that this should always be left to a third party authentication provider.</li>
+          <li class="text-white list-disc ml-8">It taught me the importance of requirements analysis. I initially
+            focused too much on technical details, which led to features that users wouldn’t realistically use — like
+            having to manually input every food ingredient and its attributes.</li>
+        </ul>
+        <br />
+        <p class="text-white">I have since set this project to the side. Although my coding standards have come a long
+          way since then, it was a pivotal learning experience. Links to the repositories are below.</p>
+        <div class="flex gap-2 mt-8">
+          <a href="https://github.com/BenHunt17/RecipeManagerApiService"
+            class="border-2 border-emerald-500 py-1 px-2 rounded-md text-emerald-500">Backend repo</a>
+          <a href="https://github.com/BenHunt17/RecipeManagerWebApplication"
+            class="border-2 border-emerald-500 py-1 px-2 rounded-md text-emerald-500">Frontend repo</a>
+        </div>
+        <br />
+        <p class="text-white">Eventually I was eager to apply my new skills to the project at work, so I
+          requested a transition. Soon after, I was working on both frontend and backend tickets.
+        </p>
+        <ul>
+          <li class="text-white list-disc ml-8">I continued to grow my expertise in C# and .NET.
+          </li>
+          <li class="text-white list-disc ml-8">I developed strong practical skills with MongoDB, including proficiency
+            in writing aggregations - which required a different mindset compared to relational database querying.
+          </li>
+          <li class="text-white list-disc ml-8">I got familar with how the backend systems were structured and picked up
+            on how to write maintainable and scalable services.</li>
+        </ul>
+        <br />
+        <p class="text-white">That brings me to today, where I continue to deepen my expertise in .NET Core, MongoDB and
+          React.</p>
+      </div>
+      <div class="border-l-6 border-emerald-500 px-4">
+        <h2 id="next-steps" class="text-4xl text-white font-bold whitespace-nowrap tracking-tighter scroll-mt-24">
+          Next steps
+        </h2>
+      </div>
+      <div>
+        <p class="text-white">
+          There are still many things which I would like to learn. Here are a few core goals of mine for the near
+          future.
+        </p>
+        <br />
+        <h3 class="text-2xl text-white font-bold">Improving my expertise in .NET</h3>
+        <p class="text-white">
+          As mentioned before, I have naturally gravitated towards C# and the .NET ecosystem. I would like to get
+          experience with other project types, such as Blazor so that I can become a more well-rounded .NET
+          developer
+        </p>
+        <br />
+        <h3 class="text-2xl text-white font-bold">Relational databases</h3>
+        <p class="text-white">
+          While I'm no stranger to SQL and relational data modelling, I recognise that my limited industry experience
+          in this area means there's room to grow. I want to deepen my expertise because relational databases still
+          dominate the industry.
+        </p>
+        <br />
+        <h3 class="text-2xl text-white font-bold">Infrastructure and deployment tooling</h3>
+        <p class="text-white">
+          At work, I’m exposed to Azure CI/CD pipelines, Docker, and Kubernetes. Eventually I want to take ownership of
+          these technologies and feel confident applying them, as they serve an important role in modern
+          software delivery.
+        </p>
+        <br />
+        <h3 class="text-2xl text-white font-bold">Artificial Intelligence</h3>
+        <p class="text-white">
+          AI has become increasingly relevant in recent years, Although I paused my focus on AI after university, I plan
+          to revisit it. I am particuarly interested in deep learning and the possibilities of AGI.
+        </p>
+      </div>
+      <div class="border-l-6 border-emerald-500 px-4">
+        <h2 id="contact-me" class="text-4xl text-white font-bold whitespace-nowrap tracking-tighter scroll-mt-24">
+          Contact me
+        </h2>
+      </div>
+      <div>
+        <p class="text-white">
+        <h5 class="text-xl text-white font-bold">
+          Email:
+        </h5>
+        <a href=" mailto:benlewishunt@gmail.com" class="text-xl text-emerald-500 underline hover:text-emerald-400">
+          benlewishunt@gmail.com
+        </a>
+        <h5 class="text-xl text-white font-bold mt-4">
+          Linkenin:
+        </h5>
+        <a href="https://www.linkedin.com/in/benjamin-hunt-96b672194" target="_blank" rel="noopener noreferrer"
+          class="text-xl text-emerald-500  underline hover:text-emerald-400">
+          Benjamin Hunt
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
 </html>
