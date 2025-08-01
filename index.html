@@ -61,37 +61,36 @@
       </div>
       <div>
         <p class="text-white">
-          Aside from my job, I am currently building a prototype for a client tracking application for personal trainers
-          to use.
-          This is a full stack project where I am utilizing ASP.NET Core Web API and SQL Server on the backend and React
-          with Typescript and TailwindCSS on the frontend. It is currently a work in progress with core feature still
-          being developed.
-        </p><br />
-        <p class="text-white mt-">
-          I initially began this project as an opportunity to get hands-on with Entity Framework Core to broaden my
-          database expertise beyond NoSQL. At the same time, I saw personal trainers online who were using spreadsheets
-          to track
-          their clients' progress. This got me thinking about if and how software could streamline this admin work,
-          allowing PTs to spend more time with their clients.
+          Aside from my job, I am currently building a consumable wishlist service prototype for a hypothetical company.
+          The core business problem this software solves is the need for a specialised consumable wishlist so that
+          people can be certain
+          that they are gifting consumable products which the recipient would like.
+        </p>
+        <br />
+        <p class="text-white">
+          There are two sides of this software solution - the first is the public facing wishlist website where they
+          create and share their wishlists. I
+          didn't implement the actual website here ebcause it falls outside of the scope of the prototype. I did however
+          implement the public REST API which the website would call to manage the wishlist resources.
+        </p>
+        <br />
+        <p class="text-white">
+          The second side is for B2B managemnt and other internal operations. The key business model would be to include
+          affiliate links in the wishlists so that profits can be made through commisions. THis would require forming
+          partnerships with many consumable providers accross different industries. I am developing a Blazor Server
+          application which will act as an in-house management tool where partnerships can be configured and any other
+          operations. I am also working on private REST API services that facilitate building up a database of affiliate
+          products.
         </p>
         <br />
         <p class="text-white mt-">
-          One key thing I've learned is that developers need to be thoughtful when using Entity Framework Core, while
-          its tooling is convenient, it's important to understand how the framework works in order to avoid performance
-          and design
-          issues.
-        </p>
-        <br />
-        <p class="text-white mt-">
-          Links to the repos are below. I plan to deploy a demo in the near future when the project is more fleshed out.
+          Links to the repo ist below. I plan to deploy a demo for the in-house web app in the near future
         </p>
         <div class="flex flex-col md:flex-row flex-wrap gap-2 mt-8">
           <a class="w-fit bg-emerald-500 py-1 px-2 rounded-md opacity-50 mr-2 cursor-default">Demo (Coming
             soon)</a>
           <a href="https://github.com/BenHunt17/pt-program-tracker-api"
-            class="w-fit border-2 border-emerald-500 py-1 px-2 rounded-md text-emerald-500 mr-2">Backend repo</a>
-          <a href="https://github.com/BenHunt17/pt-program-tracker"
-            class="w-fit border-2 border-emerald-500 py-1 px-2 rounded-md text-emerald-500">Frontend repo</a>
+            class="w-fit border-2 border-emerald-500 py-1 px-2 rounded-md text-emerald-500 mr-2">Codebase Repo</a>
         </div>
       </div>
       <div class="border-l-6 border-emerald-500 px-4">
